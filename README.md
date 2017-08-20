@@ -33,7 +33,7 @@ const api = new PubgAPI({
 });
 
 api.getProfileByNickname('javilobo8')
-  .then((profile) => {
+  .then( profile => {
     const data = profile.content;
     const stats = profile.getStats({
       region: REGION.ALL, // defaults to profile.content.selectedRegion
@@ -44,7 +44,7 @@ api.getProfileByNickname('javilobo8')
   });
 
 api.getAccountBySteamID('76561198084956266')
-  .then((account) => {
+  .then( account => {
     console.log(account);
   });
 
